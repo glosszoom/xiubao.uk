@@ -1,0 +1,195 @@
+/* ---------- Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Global ---------- */
+
+:root {
+    --primary: #0f172a;
+    --secondary: #334155;
+    --accent: #2563eb;
+    --background: #f8fafc;
+    --card: #ffffff;
+    --border: #e2e8f0;
+    --text: #334155;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 3rem 2rem;
+}
+
+/* ---------- Hero ---------- */
+header {
+    position: relative;
+    min-height: 420px;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(10,20,40,.82) 0%,
+            rgba(10,20,40,.60) 28%,
+            rgba(10,20,40,.35) 45%,
+            rgba(10,20,40,.35) 100%
+        ),
+        url("assets/profile.jpg") center center / cover no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 8%;
+}
+
+.hero {
+    width: 38%;
+    max-width: 430px;
+    text-align: left;
+}
+
+.profile {
+    display: none;
+}
+
+.hero h1 {
+    font-size: 3.3rem;
+    line-height: 1.1;
+    font-weight: 700;
+    color: white;
+}
+
+.hero h2 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #e2e8f0;
+    line-height: 1.4;
+}
+
+.hero p {
+    margin-top: 1.8rem;
+    display: inline-block;
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 999px;
+    padding: .7rem 1.3rem;
+    color: white;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+/* ---------- Sections ---------- */
+
+section {
+    background: var(--card);
+    margin-bottom: 2rem;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 25px rgba(15,23,42,.05);
+}
+
+section h3 {
+    color: var(--primary);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+section h3::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--accent);
+    margin-top: .4rem;
+    border-radius: 2px;
+}
+
+section p {
+    font-size: 1.05rem;
+    color: var(--secondary);
+}
+
+/* ---------- Links ---------- */
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    text-align: center;
+    color: #64748b;
+    padding: 2rem;
+    font-size: .9rem;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 4rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.15rem;
+    }
+
+    .profile {
+        width: 140px;
+        height: 140px;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+.expertise {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 1.5rem;
+    padding: 0;
+}
+
+.expertise li {
+    background: #eff6ff;
+    color: #1e3a8a;
+    border: 1px solid #bfdbfe;
+    border-radius: 999px;
+    padding: .65rem 1rem;
+    font-weight: 600;
+    font-size: .95rem;
+}

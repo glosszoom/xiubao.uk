@@ -4,9 +4,12 @@
 <head>
 
     <meta charset="UTF-8">
+
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
+
     <title>Xiu Bao | Financial Markets Technology Consultant</title>
+
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -14,13 +17,7 @@
 <body>
 
 <header>
-
     <div class="hero">
-
-        <img class="profile"
-             src="assets/profile.jpg"
-             alt="Profile Photo">
-
         <h1>Xiu Bao</h1>
 
         <h2>
@@ -28,14 +25,8 @@
         </h2>
 
         <p>
-
-            GLOSS SME • Production Engineering •
-            Cloud Modernisation
-
-        </p>
-
+            Trading Platforms • GLOSS • Cloud Modernisation   </p>
     </div>
-
 </header>
 
 <main>
@@ -60,57 +51,42 @@ financial markets technology.
 
 <section>
 
-<h3>Core Expertise</h3>
+    <h3>Core Expertise</h3>
 
-<ul>
+    <ul class="expertise">
 
-<li>GLOSS Platform SME</li>
-
-<li>Settlement Architecture</li>
-
-<li>Production Engineering</li>
-
-<li>Trading Systems</li>
-
-<li>FIX Protocol</li>
-
-<li>SWIFT Messaging</li>
-
-<li>Cloud Modernisation</li>
-
-<li>AWS</li>
-
-<li>Python</li>
-
-<li>Java</li>
-
-<li>SQL Server</li>
-
-</ul>
+        <li>GLOSS Platform SME</li>
+        <li>Settlement Architecture</li>
+        <li>Trading & Post-Trade Systems</li>
+        <li>Production Engineering & SRE</li>
+        <li>Application Support Leadership</li>
+        <li>FIX Protocol</li>
+        <li>SWIFT Messaging</li>
+        <li>Cloud Modernisation (AWS & GCP)</li>
+        <li>Python & Java</li>
+        <li>SQL Server</li>
+    </ul>
 
 </section>
 
+
 <section>
+    <div class="contact">
+        <h3>Connect</h3>
+        
+        <!-- The email is rendered securely via JavaScript to prevent spam scraping -->
+        <p>For consulting enquiries: 
+        email: <span id="email-link">Loading contact...</span></p>
+        <p><a href="https://linkedin.com/in/xiubao" target="_blank">View my LinkedIn Profile</a></p>
+    </div>
 
-
-<h3>Connect</h3>
-
-<div class="contact">
-    <h3>Connect</h3>
-    
-    <!-- The email is rendered securely via JavaScript to prevent spam scraping -->
-    <p>For consulting enquiries: 
-    email: <span id="email-link">Loading contact...</span></p>
-    <p><a href="https://linkedin.com/in/xiubao" target="_blank">View my LinkedIn Profile</a></p>
-</div>
-
-<script>
-    // Simple obfuscation to hide the email from basic scrapers
-    const user = "studio";
-    const domain = "xiubao.uk";
-    const element = document.getElementById("email-link");
-    element.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
-</script>
+    <script>
+        // Simple obfuscation to hide the email from basic scrapers
+        const user = "studio";
+        const domain = "xiubao.uk";
+        const element = document.getElementById("email-link");
+        element.innerHTML = `<a href="mailto:${user}@${domain}">${user}@${domain}</a>`;
+    </script>
 
 
 </section>
